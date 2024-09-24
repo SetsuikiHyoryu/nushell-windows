@@ -97,5 +97,10 @@ $env.NU_PLUGIN_DIRS = [
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
 
+fnm env --json | from json | load-env
+# 如果是 Linux，则 `node` 在 `$env.FNM_MULTISHELL_PATH join "bin` 中。
+$env.PATH = ($env.PATH | split row (char esep) | prepend $env.FNM_MULTISHELL_PATH)
+$env.PATH = ($env.PATH | uniq )
+
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
