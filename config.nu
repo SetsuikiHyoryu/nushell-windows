@@ -1,6 +1,4 @@
 # Nushell Config File
-#
-# version = "0.104.2"
 
 let pink = "#fa86c4"
 let pink_bold = { fg: $pink attr: b }
