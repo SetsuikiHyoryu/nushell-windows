@@ -128,9 +128,6 @@ $env.config.buffer_editor = "nvim"
 $env.config.edit_mode = "vi"
 $env.config.table.mode = "light"
 
-# Use Theme
-source ~/.oh-my-posh.nu
-
 # PROMPT_INDICATOR*
 # -----------------
 # The prompt indicators are environmental variables that represent
@@ -149,6 +146,9 @@ $env.PROMPT_INDICATOR_VI_INSERT = " "
 $env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # --- Third Party Custom ---
+
+# Use Theme (Third Party Prompt)
+source ~/.oh-my-posh.nu
 
 # [[Yazi]]
 # Use `yaya` instead of yazi to start, and press q to quit, you'll see the CWD changed.  
