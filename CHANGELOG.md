@@ -6,6 +6,10 @@
 
 - Add Yazi `yaya` function config.
 
+### Removed
+
+- Remove `~/oh-my-posh.nu` text because Oh My Posh v26.0.0 changed location.
+
 ## [0.1.0] - 2025-06-05
 
 ### Added (0.1.0)

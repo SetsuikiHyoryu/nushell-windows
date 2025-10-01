@@ -147,9 +147,6 @@ $env.PROMPT_MULTILINE_INDICATOR = "::: "
 
 # --- Third Party Custom ---
 
-# Use Theme (Third Party Prompt)
-source ~/.oh-my-posh.nu
-
 # [[Yazi]]
 # Use `yaya` instead of yazi to start, and press q to quit, you'll see the CWD changed.  
 # Sometimes, you don't want to change, press Q to quit.
