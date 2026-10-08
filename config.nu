@@ -124,16 +124,20 @@ $env.config.menus ++= [
 ]
 
 # 部分终端可能默认不支持 `Ctrl + [` 作为 Esc 使用。
+#
+# - 查看 keybindings 可写属性值： `keybindings list --<property-for-filter>`
+# - 监听按键：`keybindings listen`
+#
 # See: <https://www.nushell.sh/blog/2025-09-02-nushell_0_107_0.html#new-keybinding-vichangemode-16327-toc>
+# See: <https://www.nushell.sh/book/line_editor.html#send-type>
 $env.config.keybindings ++= [
     {
         name: ctrl_left_bracket_to_escape
         modifier: Control
-        keycode: "char_["
+        keycode: "Char_["
         mode: [vi_insert]
         event: [
-            { send: ViChangeMode, mode: normal },
-            { send: Left },
+            { send: SwitchMode, mode: vi_normal },
         ]
     }
 ]
